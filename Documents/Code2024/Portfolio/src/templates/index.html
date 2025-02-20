@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html  lang="en" class="no-scrollbar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="http://127.0.0.1:5000/login">
+</head>
+<body >
+    <header>            
+        </nav>
+        <a href="#"class="logo">Portfolio</a>
+        <nav>                           
+            <a href="#" class="nav-item" id="homelink">About me</a>
+            <a href="#1" class="nav-item" id="educationlink">Education</a>
+            <a href="#2" class="nav-item" id="contactlink">Feedback</a>
+            <a href="#3"class="nav-item"  id="serviceslink">skills</a>
+            <a id="l" class="log-reg" href="http://127.0.0.1:5000/login">login</a>
+            <a id="r" class="log-reg" href="http://127.0.0.1:5000/register">Register</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="{{ url_for('static', filename='images/image.jpg') }}" alt="Image Description">
+        </div>
+        <div class="middle">
+            
+                <div class="home-content">
+                    <h1 class="span">Who is  <span>Chadli</span> ?</h1>
+                    <p id="par-main" class="typing">I'm Chadli Ben Said from Tunisia, a university student passionate about programming, web development, and self-improvement. </p>
+                    <div class="botom">
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/3am_chadli?igsh=MTZrdDVsOTc1ZmFycw==" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://t.me/Akali_is_taken" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://discord.com/users/844312859491041280" target="_blank">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            
+                        </div>        
+                </div>
+            </div>
+           
+
+        </div>
+    </section>
+    <section id="1" class="mid-content">
+        <div class="mid">
+            <div class="mid1">
+                <div class="container">
+                    <div class="education-text">
+                        <h2 class="Education-title">Education</h2>
+                        <p id="par2" class="fs-1 fw-bold text-primary">I am a university student, studying Information Systems Engineering (ISI) and having a Bachelor's degree in Mathematics.</p>
+                    </div>
+                    
+                    <div class="timeline">
+                        <div class="timeline-box">
+                            <h3>High School</h3>
+                            <p><strong>Years:</strong> 2020 - 2024</p>
+                            <p><strong>Achievements:</strong> Graduated with honors,Chess Club President</p>
+                        </div>
+                
+                        <div class="timeline-box">
+                            <h3>University - Licence in Information Systems Engineering</h3>
+                            <p><strong>Years:</strong> 2025 - 2028</p>
+                            <p><strong>Achievements:</strong> CS50 Introduction to Computer Science's Certificate, Built a full-stack web application</p>
+                        </div>
+                    </div>
+                
+
+                </div>
+                
+            </div>
+        </div>
+
+           
+       
+    </section>
+    <section id="2" st class="Contact-content">
+        <div class="contact-div">
+            <form action="/feedback" method="post" >
+                <div class="form2-name">
+                    <label >Name</label>
+                </div>
+                <input placeholder="Name" id="username" name="username" required><br>
+                <div class="form2-email">
+                     <label >Email</label>
+                </div>
+                <input placeholder="exemple@gmail.com" type="email" id="email" name="email" required><br>
+                <div class="form2-msg">
+                    <label >Feedback</label>
+                </div>
+                <input placeholder="Feel free to tap " type="text" id="msg" name="msg" required><br>
+                <button class="msg-btn" type="submit">Submit</button>
+
+                
+            </form>
+              
+                    
+                
+        </div>
+         
+    </section>
+    <section id="3" class="skills-content">
+        <div class="mid">
+            <div class="mid1">
+                <div class="container">
+                    <div class="education-text">
+                        <h2 class="Education-title">Skills</h2>
+                        <p id="par2" class="fs-1 fw-bold text-primary">I have experience with C, Python, SQL, Flask, HTML, CSS, and JavaScript from CS50. I'm particularly excited about web development and have worked with Flask for backend development. I'm also improving my SQL skills and have a solid foundation in problem-solving and algorithms from CS50's problem sets.</p>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+           
+       
+    </section>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    
+</body>
+</html>
+
+
+    
